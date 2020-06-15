@@ -1,0 +1,11 @@
+universe = vanilla
+Requirements = (Arch == "X86_64")
++RUQueue = "cms"
++AccountingGroup = "group_rutgers.rek81"
+Executable = picotree_data.sh
+should_transfer_files = NO
+Output = /home/rek81/userArea/treemaker_version_May7/CMSSW_10_2_9/src/PICOTREES_WITH_TTBARvariables/PICOTREE_ADDED_DEEPBBTAGHbb/2016/DATA/condor_logfiles_forData/data_picotree_$(cluster)_$(process).stdout
+Error = /home/rek81/userArea/treemaker_version_May7/CMSSW_10_2_9/src/PICOTREES_WITH_TTBARvariables/PICOTREE_ADDED_DEEPBBTAGHbb/2016/DATA/condor_logfiles_forData/data_picotree_$(cluster)_$(process).stderr
+Log = /home/rek81/userArea/treemaker_version_May7/CMSSW_10_2_9/src/PICOTREES_WITH_TTBARvariables/PICOTREE_ADDED_DEEPBBTAGHbb/2016/DATA/condor_logfiles_forData/data_picotree_$(cluster)_$(process).condor
+Arguments = $(cluster) $(process)
+Queue 8
